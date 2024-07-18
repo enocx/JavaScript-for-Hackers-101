@@ -912,11 +912,11 @@ grandparent.addEventListener("click", () => alert("Grandparent 1"),{capture: tru
 parent.addEventListener("click", () => alert("Parent 1"));
 child.addEventListener("click", () => alert("Child 1"));
 document.addEventListener("click", () => {alert("Document 1")});
-   
-/*The control goes to the grandparent DIV because we have set capture as true 
-for the grandparent DIV, after that the control goes back to the clicked div
-*/
 ```
+
+>The control goes to the grandparent DIV because we have set capture as true 
+>for the grandparent DIV, after that the control goes back to the clicked div
+
 
 ## Event Delegation
 
@@ -943,19 +943,15 @@ const divs = document.querySelectorAll("div"); //selecting all the DIVs
     newDiv.style.backgroundColor = "purple"
 
     document.body.append(newDiv) //appending the new DIV to the document
-
-/* In the above code, we have selected all the div elements using the
-**.querySelectorAll()** method, but later on we can see that we have created a new
-div element using the **.createElement()** method. Since we have already selected
-all the divs before itself, the newly created DIV will not be included in it.
-The Event Delegation concept solves this problem
-*/
-
-****
 ```
 
-```jsx
-```
+>In the above code, we have selected all the div elements using the
+>**.querySelectorAll()** method, but later on we can see that we have created a new
+>div element using the **.createElement()** method. Since we have already selected
+>all the divs before itself, the newly created DIV will not be included in it.
+>The Event Delegation concept solves this problem
+
+	
 ### THE SOLUTION
 
 ```
