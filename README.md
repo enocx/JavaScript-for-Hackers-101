@@ -504,7 +504,7 @@ console.log(doubleNumbers)
 ```
 >Remember, in ES6 syntax, if we are only returning a single item, we don't
 >need to put it in curly brackets. This way of writing JavaScript code is
->more cleaner and readable*/
+>more cleaner and readable
 
 
 ## Find method
@@ -540,7 +540,7 @@ function search(people){
 
 console.log(names.find(search)) 
 
-/*Displaying the output of the find function which takes in the search function as an argument which we defined above */
+//Displaying the output of the find function which takes in the search function as an argument which we defined above.
 
 ```
 ```scala
@@ -550,7 +550,7 @@ console.log(names.find(search))
 
 ```
 
-### We can take this a step further and access just the individual values instead of the entire object itself */
+### We can take this a step further and access just the individual values instead of the entire object itself
 
 ```jsx
 console.log(names.find(search).age) //Displays the age value from the object
