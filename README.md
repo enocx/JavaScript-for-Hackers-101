@@ -954,11 +954,12 @@ const divs = document.querySelectorAll("div"); //selecting all the DIVs
 	
 ### THE SOLUTION
 
-```
+```jsx
 const divs = document.querySelectorAll("div");
 
 //performing checks to verify if the mouse clicks were on the DIV element
-    document.addEventListener("click", e => { 
+			
+    document.addEventListener("click", e => { 	
         if(e.target.matches("div")){
             alert("Hi");
         }
