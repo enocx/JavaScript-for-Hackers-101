@@ -123,7 +123,7 @@ OUTPUT:
 Vehicle {type: 'car', year: 2001}
 type: "car"
 year: 2001
-[[Prototype]]: Object**
+[[Prototype]]: Object
 ```
 
 ### Creating objects without the use of constructors
