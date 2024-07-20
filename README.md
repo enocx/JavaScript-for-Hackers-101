@@ -577,7 +577,7 @@ const filtered = array.filter((e)=>{
 })
 
 console.log(filtered);
-
+```
 ```scala
 
 OUTPUT:
