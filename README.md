@@ -248,8 +248,8 @@ type: "car"
 [[Prototype]]: Object
 ```
 
->Even if we were to add another method to the object later on, the **`this`** keyword will still reference the vehicle object. 
->Because, again the stop method is inside the vehicle object
+>**Even if we were to add another method to the object later on, the `this` keyword will still reference the vehicle object. 
+>Because, again the stop method is inside the vehicle object**
 
 
 
@@ -271,7 +271,7 @@ OUTPUT:
 Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
 ```
 
->Just like we learned previously, when the "this" keyword is used in a regular function, it will refer to the window object
+>**Just like we learned previously, when the "this" keyword is used in a regular function, it will refer to the window object**
 
 ### Manipulating properties in an object
 
@@ -502,9 +502,9 @@ const doubleNumbers = numbers.map(e => e * 2)
 console.log(doubleNumbers)
 
 ```
->Remember, in ES6 syntax, if we are only returning a single item, we don't
+>**Remember, in ES6 syntax, if we are only returning a single item, we don't
 >need to put it in curly brackets. This way of writing JavaScript code is
->more cleaner and readable
+>more cleaner and readable**
 
 
 ## Find method
@@ -544,9 +544,9 @@ console.log(names.find(search))
 
 ```
 ```scala
-**OUTPUT:
+OUTPUT:
 
-{ name: 'Ram', age: 18, employed: false }**
+{ name: 'Ram', age: 18, employed: false }
 
 ```
 
@@ -585,12 +585,12 @@ OUTPUT:
 [ 2, 4, 45, 0, 9, 12 ]
 ```
 
->We define an array named "**array**" containing both positive and negative numbers
->A constant variable called "**filtered**" stores the results of the **array.filter()**
+>**We define an array named `array` containing both positive and negative numbers
+>A constant variable called `filterer` stores the results of the `array.filter()`
 >method, which filters the "**array**" for elements greater than or equal to zero.
->The **array.filter()** method iterates through the array using the temporary 
->variable "**e**" and returns values where "**e**" meets the condition. 
->Finally, the variable "**filtered**" containing the filtered results is displayed.
+>The `array.filter()` method iterates through the array using the temporary 
+>variable `e` and returns values where `e` meets the condition. 
+>Finally, the variable `filtered` containing the filtered results is displayed.**
 
 ## Arrow Functions
 
@@ -636,7 +636,7 @@ oneParam(2);
 ```
 
 ```scala
-**OUTPUT:
+OUTPUT:
 
 3
 ```
@@ -701,7 +701,7 @@ var queryselectorall = document.querySelectorAll(".click-button");
 ```scala
 OUTPUT:
 
-NodeList(4) [button.click-button, button.click-button, button.click-button, button.click-button]**
+NodeList(4) [button.click-button, button.click-button, button.click-button, button.click-button]
     
 ```
 
@@ -768,18 +768,16 @@ If we want to listen to the keyboard inputs, we must use the keydown event liste
 document.body.addEventListener("keydown", (event) =>{
             alert(event.key + " was pressed");
         });
-
-/* We are adding an event listener to the body, the event listener method takes 
-three parameters in this case.
-The first parameter is the event to listen to.
-The second parameter in brackets (event) will store the event into it.
-The third parameter is the function to be executed when the event occurs
-
-The event.key in the alert function will output the key pressed.
-The .key method is used to access the data that reveals which key was pressed
-on the keyboard
-*/
 ```
+>**We are adding an event listener to the body, the event listener method takes three parameters in this case.
+>The first parameter is the event to listen to.
+>The second parameter in brackets (event) will store the event into it.
+>The third parameter is the function to be executed when the event occurs
+
+>The event.key in the alert function will output the key pressed.
+>The `.key` method is used to access the data that reveals which key was pressed on the keyboard**
+
+
 
 ### Event Listener which only runs once
 
@@ -914,8 +912,8 @@ child.addEventListener("click", () => alert("Child 1"));
 document.addEventListener("click", () => {alert("Document 1")});
 ```
 
->The control goes to the grandparent DIV because we have set capture as true 
->for the grandparent DIV, after that the control goes back to the clicked div
+>**The control goes to the grandparent DIV because we have set capture as true 
+>for the grandparent DIV, after that the control goes back to the clicked div**
 
 
 ## Event Delegation
@@ -945,11 +943,11 @@ const divs = document.querySelectorAll("div"); //selecting all the DIVs
     document.body.append(newDiv) //appending the new DIV to the document
 ```
 
->In the above code, we have selected all the div elements using the
->**.querySelectorAll()** method, but later on we can see that we have created a new
->div element using the **.createElement()** method. Since we have already selected
+>**In the above code, we have selected all the div elements using the
+>`.querySelectorAll()` method, but later on we can see that we have created a new
+>div element using the `.createElement()` method. Since we have already selected
 >all the divs before itself, the newly created DIV will not be included in it.
->The Event Delegation concept solves this problem
+>The Event Delegation concept solves this problem.**
 
 	
 ### THE SOLUTION
@@ -976,11 +974,11 @@ const divs = document.querySelectorAll("div");
 
     document.body.append(newDiv)
 ```
->In the above code, we have written a check to verify if the mouse clicks by
+>**In the above code, we have written a check to verify if the mouse clicks by
 >the user were on the DIV elements or not. We are using a method to do this.
 >If the clicks matches the condition, The alert function will be executed or else
 >the clicks will be ignored. This is a useful real-life application of 
->the Event Delegation concept.
+>the Event Delegation concept.**
 
 
 ## Useful DOM Manipulation techniques
@@ -1071,9 +1069,9 @@ The **`.getAttribute()`**e method is used to display the attributes of an HTML e
 alert(document.querySelector(".how").getAttribute("title"));
 ```
 
->The querySelector method will select the HTML element with class ".how" and it
+>**The querySelector method will select the HTML element with class ".how" and it
 >will display the tile that has been set to it.
->The output will be an alert pop-up with the text "alright?"
+>The output will be an alert pop-up with the text "alright?"**
 
 ### Set Attribute
 
@@ -1097,8 +1095,8 @@ The **`.setAttribute()`** method is used to set attributes to an HTML element. A
 document.querySelector(".water").setAttribute("id", "under" );
 ```
 
->This will select the HTML element with the class ".water" and will create an
->**ID** attribute and set its value to "under"
+>**This will select the HTML element with the class ".water" and will create an**
+>`ID` **attribute and set its value to "under"**
 
 ```jsx
 alert(document.querySelector(".water").getAttribute("id"));
@@ -1188,7 +1186,7 @@ A blank alert box
 The **`.toggle()`** method when used either add the class to the HTML if it doesn’t exist or it removes the class if it exists in the HTML element. This method takes two parameters. The first parameter is the class name we want to toggle and the second parameter is a boolean value.
 
 
->📌If the boolean value is set to “**true**” then it will add the class which we provided to the HTML element and if we set the value to “**false**” then >it will remove the class from the HTML element.
+>📌**If the boolean value is set to “**true**” then it will add the class which we provided to the HTML element and if we set the value to “**false**” then >it will remove the class from the HTML element.**
 
 ```html
 <body>
@@ -1245,7 +1243,7 @@ The **`.style.color`** property can be used to change the colour of a text in an
     <h3 class="send-help">Please help me</h3>
 </body>
 ```html
-
+```
 ```jsx
 
 document.querySelector(".send-help").style.color = "red"; //setting color to red
@@ -1316,13 +1314,13 @@ vehicle.then(function(onSuccess){
     console.log(onError + " is not a valid car name!")
 })
 ```
->After we have made a promise, we have to call multiple methods on it. We
+>**After we have made a promise, we have to call multiple methods on it. We
 >have used the **then()** method that is used to describe what to do when the
 >the promise returns the data. So we have written a function with a parameter called
->**onSuccess** which references to the return data of the Promise object.
+>onSuccess** **which references to the return data of the Promise object.
 >And in the case of a reject, we have created another function with a parameter
 >called onError which is also a reference to the return data of the Promise
->object.
+>object.**
 
 
 ## Phases in a Promise
@@ -1350,8 +1348,8 @@ OUTPUT:
 
 'Promise {<pending>}'**
 ```
->In this code, We have used the promise object but we haven't set any rules 
->for the **resolve** and **reject** phase. So by default, the code is pending*/
+>**In this code, We have used the promise object but we haven't set any rules
+>for the `resolve` and reject phase. So by default, the code is pending**
 
 ### FULFILLED
 
@@ -1413,11 +1411,11 @@ Wrong Calculation!**
 'Promise {<fulfilled>: undefined}'
 ```
 
->Interestingly, the log shows that the promise has been fulfilled even though
+>**Interestingly, the log shows that the promise has been fulfilled even though
 >the rejected case was executed. Why did that happen?
 >If we think about it, the **catch** method has caught the rejected case successfully
 >and displayed the messages successfully, so that is why the promise has been
->shown as fulfilled*/
+>shown as fulfilled**
 
 # Async/Await in JavaScript
 
@@ -1485,4 +1483,4 @@ async function theAsyncWay(){
 theAsyncWay()
 ```
 
-> Notice the improvement in the readability of the code written using **ASYNC/AWAIT**
+> **Notice the improvement in the readability of the code written using** **`ASYNC/AWAIT`**
