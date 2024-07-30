@@ -1376,7 +1376,7 @@ check.then((message) =>{
 ```scala
 OUTPUT:
 
-Correct Calculation!**
+Correct Calculation!
 'Promise {<fulfilled>: undefined}'
 ```
 In this code, the promise has been fulfilled, and the **resolve** case
