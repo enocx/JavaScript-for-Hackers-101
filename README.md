@@ -1,6 +1,6 @@
-### JAVASCRIPT 101 FOR HACKERS
+# JAVASCRIPT FOR HACKERS 101
 
-Made with ❤️ by Enoch
+### MADE WITH  ☕ & ❤️ BY ENOCH
 
 # Introduction
 
