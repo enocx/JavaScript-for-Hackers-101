@@ -323,7 +323,7 @@ We use a method called **`.stringify()`** to do that
 We can convert a JSON to a JavaScript object using the same Build-in Object called **JSON** but by using another method called **`.parse()`**
 
 ```jsx
-const jsonString = JSON.stringify(car); //converts & stores the **Car** property as JSON 
+const jsonString = JSON.stringify(car); //converts & stores the Car property as JSON 
 console.log(jsproperty) //displays the JS property as JSON
 ```
 
@@ -475,7 +475,7 @@ todo 5
 
 ## Map function
 
-The **`.map()`** function is a core feature of modern JavaScript and it is a powerful and commonly used function. The map function works almost similarly to the **`.forEach()`** function but with a small difference. While the **`.forEach()`** method iterates through each element in an array, the **`.map()`**function also iterates through each element in the array, But it returns with an Array of values it iterated through the original array. To achieve this, the **`.map()`** function takes an argument and uses it as a temporary variable to store the values in the array the **`.map()`** function iterates through so they can be returned. It’s also important to note that  **`.map()`** function **DOES NOT** modify the original array. Unlike **`.forEach()`**, which can modify the elements within the original array, the **`.map()`** function only creates a new array with transformed values and leaves the original array untouched.
+The **`.map()`** function is a core feature of modern JavaScript and it is a powerful and commonly used function. The map function works almost similarly to the **`.forEach()`** function but with a small difference. While the **`.forEach()`** method iterates through each element in an array, the **`.map()`** function also iterates through each element in the array, But it returns with an Array of values it iterated through the original array. To achieve this, the **`.map()`** function takes an argument and uses it as a temporary variable to store the values in the array the **`.map()`** function iterates through so they can be returned. It’s also important to note that  **`.map()`** function **DOES NOT** modify the original array. Unlike **`.forEach()`**, which can modify the elements within the original array, the **`.map()`** function only creates a new array with transformed values and leaves the original array untouched.
 
 ```jsx
 const numbers = [2,4,6,8,10] //original array
@@ -492,7 +492,7 @@ console.log(doubleNumbers)
 >temporarily. It can be named anything but it's often named an item or element**
 
 
-### We can write the above code in a much cleaner way using the ES6 syntax**
+### We can write the above code in a much cleaner way using the ES6 syntax
 
 ```jsx
 const numbers = [2,4,6,8,10]
@@ -693,7 +693,7 @@ OUTPUT:
 ```jsx
 <button class="click-button">Click Me!</button>
 
-//notice the difference between both the methods**
+//notice the difference between both the methods
 
 var queryselectorall = document.querySelectorAll(".click-button");
     console.log(queryselectorall);
@@ -772,9 +772,9 @@ document.body.addEventListener("keydown", (event) =>{
 >**We are adding an event listener to the body, the event listener method takes three parameters in this case.
 >The first parameter is the event to listen to.
 >The second parameter in brackets (event) will store the event into it.
->The third parameter is the function to be executed when the event occurs
+>The third parameter is the function to be executed when the event occurs**
 
->The event.key in the alert function will output the key pressed.
+>**The event.key in the alert function will output the key pressed.
 >The `.key` method is used to access the data that reveals which key was pressed on the keyboard**
 
 
@@ -1008,7 +1008,7 @@ document.body.append(div); //adding/appending the div to the pagearray
 
 ### Inner Text
 
-The **`.innerText()`**   method is used for adding texts into an HTML element. Suppose we want to add a text inside the div we created using the **`.createElement()`** method, we can simply use the **`.innerText()`**method to do that
+The **`.innerText()`**   method is used for adding texts into an HTML element. Suppose we want to add a text inside the div we created using the **`.createElement()`** method, we can simply use the **`.innerText()`** method to do that
 
 ```jsx
 var div = document.createElement('div');
@@ -1056,7 +1056,7 @@ document.querySelector(".greet").remove(); //or we can just remove it directly
 
 ### Get Attribute
 
-The **`.getAttribute()`**e method is used to display the attributes of an HTML element. Attributes like class, title, id, etc can be displayed using the **`.getAttribute()`** method. This method takes one parameter that is the attribute type of an HTML element we want to display. 
+The **`.getAttribute()`** method is used to display the attributes of an HTML element. Attributes like class, title, id, etc can be displayed using the **`.getAttribute()`** method. This method takes one parameter that is the attribute type of an HTML element we want to display. 
 
 ```html
 <body>
@@ -1105,26 +1105,11 @@ alert(document.querySelector(".water").getAttribute("id"));
 
 ### Remove Attribute
 
-The `.**removeAttribute()**` method will remove an attribute from an HTML element provided that the attribute exists in the first place. Attributes like class, id, title, etc can be removed
+The **`.removeAttribute()`** method will remove an attribute from an HTML element provided that the attribute exists in the first place. Attributes like class, id, title, etc can be removed
 This method takes one parameter which is the name of the attribute which we want to remove.
 
 ```html
 <body>
-    <h1 class="greet">Hello</h1>
-    <h2 class="how" title="alright?">How are you?</h2>
-    <h2 class="water">I am under the water</h2>
-</body>
-```
-
-```jsx
-document.querySelector(".how").removeAttribute("title");
-//removing the title attribute
-
-alert(document.querySelector(".how").getAttribute("title"));
-```
-```scala
-OUTPUT: 
-
 An alert box with the text "NULL"
 ```
 
@@ -1153,7 +1138,7 @@ alert(document.querySelector("h3").getAttribute("class"));//displaying the class
 ```scala
 OUTPUT:
 
-An alert box with the text "send-help"** 
+An alert box with the text "send-help"
 ```
 
 ### Class List Remove
@@ -1186,7 +1171,7 @@ A blank alert box
 The **`.toggle()`** method when used either add the class to the HTML if it doesn’t exist or it removes the class if it exists in the HTML element. This method takes two parameters. The first parameter is the class name we want to toggle and the second parameter is a boolean value.
 
 
->📌**If the boolean value is set to “**true**” then it will add the class which we provided to the HTML element and if we set the value to “**false**” then >it will remove the class from the HTML element.**
+>📌**If the boolean value is set to “true” then it will add the class which we provided to the HTML element and if we set the value to “false” then it will remove the class from the HTML element.**
 
 ```html
 <body>
@@ -1256,7 +1241,7 @@ document.querySelector(".send-help").style.color = "red"; //setting color to red
     <h1 class="greet">Hello</h1>
     <h2 class="how" title="alright?">How are you?</h2>
     <h2 class="water">I am under the water</h2>
-    <h3 class="send-help" **style="color: red;**">Please help me</h3>
+    <h3 class="send-help" style="color: red;">Please help me</h3>
 </body>
 ```
 
@@ -1346,7 +1331,7 @@ check.then((message) =>{
 ```scala
 OUTPUT:
 
-'Promise {<pending>}'**
+'Promise {<pending>}'
 ```
 >**In this code, We have used the promise object but we haven't set any rules
 >for the `resolve` and reject phase. So by default, the code is pending**
@@ -1390,7 +1375,7 @@ This means that the asynchronous operation has failed.
 ```jsx
 let check = new Promise((resolve,reject) =>{
     let sum = 1+1;
-    if(**sum == 3**){
+    if(sum == 3){
         resolve("1 + 1 = 2");
     }else{
         reject("1 + 1 != 3");
@@ -1407,7 +1392,7 @@ check.then((message) =>{
 ```scala
 OUTPUT:
 
-Wrong Calculation!**
+Wrong Calculation!
 'Promise {<fulfilled>: undefined}'
 ```
 
